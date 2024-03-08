@@ -11,7 +11,7 @@
 
 - (void)handleMethodCall:(FlutterMethodCall *)call
                   result:(FlutterResult)result {
-  NSLog(@"%@", call.method);
+
   if ([@"updateBadgeCount" isEqualToString:call.method]) {
     NSDictionary *args = call.arguments;
     NSNumber *count = [args objectForKey:@"count"];
