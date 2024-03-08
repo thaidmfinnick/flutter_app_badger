@@ -8,7 +8,7 @@
   FlutterAppBadgerPlugin *instance = [[FlutterAppBadgerPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
-
+(* NSLog(@"%@", call.method); *)
 - (void)handleMethodCall:(FlutterMethodCall *)call
                   result:(FlutterResult)result {
 
